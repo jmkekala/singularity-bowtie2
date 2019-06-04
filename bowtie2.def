@@ -4,8 +4,6 @@ From: ubuntu:16.04
 %post
         apt-get -y update
         apt-get -y install wget bash bzip2 git curl build-essential python
-        #echo ". /root/miniconda/etc/profile.d/conda.sh" >> /root/.bashrc
-
         wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
         bash Miniconda2-latest-Linux-x86_64.sh -b -f -p /usr/local/
 	rm -f Miniconda2-latest-Linux-x86_64.sh
